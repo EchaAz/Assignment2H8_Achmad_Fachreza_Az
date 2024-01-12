@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 1</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand mb-4 bg-body-tertiary shadow">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PRODUCT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">INVENTORY</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container my-4 bg-white p-4 rounded shadow">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="d-flex align-items-center">
+                    <img src="asset/WhatsApp Image 2024-01-10 at 09.29.15_aacbfdd5.jpg" alt="Profile Picture"
+                        class="img-fluid rounded-circle profile-picture">
+                    <div class="ms-3">
+                        <h1 class="mb-2 my-name" id="my_nama">Achmad Fachreza Az</h1>
+                        <p class="mb-0" id="my_role">Front End Developer</p>
+                        <div class="mt-5 btn-container">
+                            <button type="button" class="btn btn-primary mt-2">Contact</button>
+                            <button type="button" class="btn btn-outline-success mt-2">Resume</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-1 detail">
+                <div class="row">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr>
+                                <td class="fw-bold">Availability</td>
+                                <td id="my_availability">Full-time</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Usia</td>
+                                <td id="my_usia">22</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Lokasi</td>
+                                <td id="my_lokasi">Jakarta</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Pengalaman</td>
+                                <td id="my_yoa">1 Tahun</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Email</td>
+                                <td id="my_email">fachreza.az234@gmail.com</td>
+                            </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container mt-4 form-container" id="input_data_form">
+        <div class="row">
+            <div class="col-md-12 bg-white p-4 rounded shadow custom-form">
+                <form>
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="nama" name="nama" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="role" class="form-label">Role</label>
+                        <input type="text" class="form-control" id="role" name="role" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="availability" class="form-label">Availability</label>
+                        <input type="text" class="form-control" id="availability" name="availability" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="usia" class="form-label">Usia</label>
+                        <input type="number" class="form-control" id="usia" name="usia" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="lokasi" class="form-label">Lokasi</label>
+                        <input type="text" class="form-control" id="lokasi" name="lokasi" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="yoa" class="form-label">Years Experience</label>
+                        <input type="number" class="form-control" id="yoa" name="yoa" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" id="submitbutton">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
